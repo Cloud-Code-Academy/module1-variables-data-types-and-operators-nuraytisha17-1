@@ -32,7 +32,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {  
-        if (a == null || b == null) {
+        if (a == null || b == null) 
+        {
             return null;
         }
         return a + b; // Replace null with the variable you used to store the result
@@ -72,7 +73,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Double division(Double a, Double b) {
-        if (b == 0) {
+        if (b == 0) 
+        {
             return 0;
         }
         return a / b; // Replace null with the variable you used to store the result
@@ -168,6 +170,7 @@ public with sharing class VariablesDataTypesOperators {
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
         Final Integer MILLISECONDS_PER_MINUTE = 60000; // Made this value a constant
         Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
+
         return milliseconds; // Replace null with the variable you used to store the result
     }    
 
@@ -213,6 +216,7 @@ public with sharing class VariablesDataTypesOperators {
         // The result of the expression as it is right now is 43. 
         // You should add parentheses so that the result of the expression becomes 8.
         Integer answer = 48 - ((15 + 5) * 2);
+
         return answer; // Replace null with the variable you used to store the result
     }
 
@@ -269,6 +273,7 @@ public with sharing class VariablesDataTypesOperators {
 
         // Write the code for type casting the divisionResult to an Integer
         Integer roundedResult = Integer.valueOf(divisionResult);
+
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
@@ -284,6 +289,7 @@ public with sharing class VariablesDataTypesOperators {
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         // Calculate the weekly paycheck using the formula: rate multiplied by hours
         Decimal weeklyPaycheck = hourlyRate * numberOfHours;
+
         return weeklyPaycheck; // Replace null with the variable you used to store the result
     }
 
@@ -300,7 +306,9 @@ public with sharing class VariablesDataTypesOperators {
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         Decimal weeklyPaycheck = hourlyRate * numberOfHours;
         Decimal numberOfWeeks = 4;
+
         Decimal monthlyPaycheck = weeklyPaycheck * numberOfWeeks;
+
         return monthlyPaycheck; // Replace null with the variable you used to store the result
     }
 
@@ -316,6 +324,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
         Decimal totalCost = (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
+        
         return totalCost; // Replace null with the variable you used to store the result
     }
 }
